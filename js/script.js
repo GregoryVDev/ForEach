@@ -145,3 +145,19 @@ boxes.forEach((box) => {
         e.target.style.transform = "scale(0.7)";
     });
 });
+
+// Bubbling => fin (de base l'eventlistener est paramétré en mode Bubbling)
+
+// document.body.addEventListener("click", () => {
+//     console.log("click 1 !");
+// }, false);
+
+// Usercapture (Il se lance avant le Bubbling)
+
+// document.body.addEventListener("click", () => {
+//     console.log("click 2 !");
+// }, true);
+
+
+
+// https://gomakethings.com/what-is-that-third-argument-on-the-vanilla-js-addeventlistener-method-and-when-do-you-need-it/
